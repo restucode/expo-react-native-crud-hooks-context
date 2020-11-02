@@ -1,21 +1,32 @@
-import { StatusBar } from 'expo-status-bar';
-import React from 'react';
-import { StyleSheet, Text, View } from 'react-native';
+import 'react-native-gesture-handler'
+import React, { useState } from 'react';
+import { AppLoading } from 'expo'
+import RootDrawerNavigation from './routes/Drawer'
+// import fonts
+import * as Font from 'expo-font'
+
+
+const getFonts = () => Font.loadAsync({
+    'SourceSansProRegular' : require('./assets/fonts/SourceSansPro-Regular.ttf'),
+    'SourceSansProSemiBold' : require('./assets/fonts/SourceSansPro-SemiBold.ttf'),
+  })
+
+
 
 export default function App() {
-  return (
-    <View style={styles.container}>
-      <Text>Open up App.js to start working on your app!</Text>
-      <StatusBar style="auto" />
-    </View>
-  );
-}
 
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-});
+  const [ fontsLoaded, setFontsLoaded ] = useState(false)
+
+  if(fontsLoaded) {
+    return (
+      <RootDrawerNavigation />
+    );
+  } else {
+    return(
+     <AppLoading
+      startAsync={getFonts}
+      onFinish={() => setFontsLoaded(true)}
+     />
+    ) 
+  }
+}
