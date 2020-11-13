@@ -1,5 +1,6 @@
 export const GuruReducer = (state, action) => {
 	switch(action.type) {
+<<<<<<< HEAD
 		case 'ADD_GURU' :
 			return {
 				...state,
@@ -25,6 +26,8 @@ export const GuruReducer = (state, action) => {
 				...state,
 				dataGuru: state.dataGuru.filter(guru => action.key !== guru.key)
 			}
+=======
+>>>>>>> 020f9522ee44714fdc9fd02eaa30c2bc5d81ec8c
 		default :
 		 return state
 	}

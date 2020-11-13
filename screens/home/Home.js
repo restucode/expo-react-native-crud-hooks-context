@@ -22,6 +22,11 @@ const Home = ({ navigation }) => {
 	const { dataSiswa } = useSiswaContext()
 	const { dataGuru } = useGuruContext()
 	const [number, setNumber] = useState(1)
+<<<<<<< HEAD
+=======
+	const dataSiswaSort = dataSiswa.sort((a,b) => a.nama > b.nama)
+	const dataGuruSort = dataGuru.sort((a,b) => a.nama > b.nama)
+>>>>>>> 020f9522ee44714fdc9fd02eaa30c2bc5d81ec8c
 
 	return (
 		<View style={globalStyles.container}>
@@ -32,11 +37,19 @@ const Home = ({ navigation }) => {
 		 </View>
 		 <View style={globalStyles.listCard}>
 		  <FlatList
+<<<<<<< HEAD
 		   data={dataSiswa}
 		   
 		   renderItem={({ item, index }) => (
 		   	<Card>
 		   		<View style={globalStyles.circleNum}>
+=======
+		   data={dataSiswaSort}
+		   
+		   renderItem={({ item, index }) => (
+		   	<Card>
+		   				   	<View style={globalStyles.circleNum}>
+>>>>>>> 020f9522ee44714fdc9fd02eaa30c2bc5d81ec8c
 			   		<Text style={globalStyles.circleNumText}>{number + index}</Text>
 			   	</View>
 		   		<Text>{ item.nama }</Text>
@@ -51,7 +64,11 @@ const Home = ({ navigation }) => {
 		 </View>
 		 <View style={globalStyles.listCard}>
 		  <FlatList
+<<<<<<< HEAD
 		   data={dataGuru}
+=======
+		   data={dataGuruSort}
+>>>>>>> 020f9522ee44714fdc9fd02eaa30c2bc5d81ec8c
 		   
 		   renderItem={({ item, index }) => (
 		   	<Card>

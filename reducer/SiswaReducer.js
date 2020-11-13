@@ -1,5 +1,6 @@
 export const SiswaReducer = (state, action) => {
 	switch(action.type) {
+<<<<<<< HEAD
 
 		case 'ADD_SISWA' :
 			return {
@@ -30,6 +31,8 @@ export const SiswaReducer = (state, action) => {
 				dataSiswa : state.dataSiswa.filter(siswa => siswa.key !== action.key)
 			}
 		
+=======
+>>>>>>> 020f9522ee44714fdc9fd02eaa30c2bc5d81ec8c
 		default:
 		return state
 	}

@@ -1,4 +1,8 @@
 import React from 'react'
+<<<<<<< HEAD
+=======
+import { View, Text } from 'react-native'
+>>>>>>> 020f9522ee44714fdc9fd02eaa30c2bc5d81ec8c
 import { createStackNavigator } from '@react-navigation/stack';
 
 // import screen

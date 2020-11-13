@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 import React, { useState } from 'react'
 import { 
 	View, Text, TouchableOpacity,
@@ -101,10 +102,20 @@ const ListGuru = ({ navigation }) => {
 		 	  	 
 		 		/>
  		</TouchableOpacity>
+=======
+import React from 'react'
+import { View, Text } from 'react-native'
+
+const ListGuru = () => {
+	return (
+		<View>
+			<Text>Screen Guru</Text>
+>>>>>>> 020f9522ee44714fdc9fd02eaa30c2bc5d81ec8c
 		</View>
 	)
 }
 
+<<<<<<< HEAD
 
 const styles = StyleSheet.create({
 	cardGuru : {
@@ -126,4 +137,6 @@ const styles = StyleSheet.create({
 
 })
 
+=======
+>>>>>>> 020f9522ee44714fdc9fd02eaa30c2bc5d81ec8c
 export default ListGuru

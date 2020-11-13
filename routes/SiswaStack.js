@@ -16,6 +16,7 @@ const Stack = createStackNavigator()
 const SiswaStack = () => {
   return(
  	<Stack.Navigator>
+<<<<<<< HEAD
 		<Stack.Screen 
 		name='ListSiswa' 
 		component={ListSiswa}
@@ -37,6 +38,15 @@ const SiswaStack = () => {
 			 title: 'Update Siswa'
 		   }}
 	   />
+=======
+   	<Stack.Screen 
+   	  name='ListSiswa' 
+   	  component={ListSiswa}
+   	  options={({ navigation }) => ({
+		 header: () => <Header navigation={navigation} title='Siswa' />
+	  })}
+   	/>
+>>>>>>> 020f9522ee44714fdc9fd02eaa30c2bc5d81ec8c
    </Stack.Navigator>
   )
   

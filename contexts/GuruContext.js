@@ -12,10 +12,16 @@ export const useGuruContext = () => {
 
 const GuruContextProvider = ({ children }) => {
 	const [state, dispatch] = useReducer(GuruReducer, globalState)
+<<<<<<< HEAD
 	const dataGuruSort = state.dataGuru.sort((a,b) => a.nama > b.nama)
 	return (
 	  <GuruContext.Provider value={{
 	  	dataGuru: dataGuruSort,
+=======
+	return (
+	  <GuruContext.Provider value={{
+	  	dataGuru: state.dataGuru,
+>>>>>>> 020f9522ee44714fdc9fd02eaa30c2bc5d81ec8c
 	  	dispatch
 	  }}>
 	  	{children}

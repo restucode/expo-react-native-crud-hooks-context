@@ -13,7 +13,10 @@
     "@react-navigation/native": "^5.8.1",
     "@react-navigation/stack": "^5.11.0",
     "expo": "~39.0.2",
+<<<<<<< HEAD
     "expo-random": "~9.0.0",
+=======
+>>>>>>> 020f9522ee44714fdc9fd02eaa30c2bc5d81ec8c
     "expo-status-bar": "~1.0.2",
     "formik": "^2.2.1",
     "react": "16.13.1",
